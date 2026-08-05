@@ -1,0 +1,86 @@
+
+<svg xmlns="http://www.w3.org/2000/svg"
+     viewBox="0 0 710 250"
+     width="1000"
+     height="250">
+
+    <defs>
+        <linearGradient id="redGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color="#f43f5e"/>
+            <stop offset="100%" stop-color="#f43f5e"/>
+        </linearGradient>
+
+        <linearGradient id="shieldGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+            <stop offset="0%" stop-color="#f43f5e"/>
+            <stop offset="100%" stop-color="#f43f5e"/>
+        </linearGradient>
+
+        <filter id="glow">
+            <feGaussianBlur stdDeviation="8" result="coloredBlur"/>
+            <feMerge>
+                <feMergeNode in="coloredBlur"/>
+                <feMergeNode in="SourceGraphic"/>
+            </feMerge>
+        </filter>
+    </defs>
+
+    <!-- Icon -->
+    <g transform="translate(40,35)">
+        <!-- Glow -->
+        <rect x="0"
+              y="0"
+              width="180"
+              height="200"
+              rx="35"
+              fill="#212529"
+              stroke="url(#redGradient)"
+              stroke-width="4"
+              filter="url(#glow)"/>
+
+        <!-- Shield -->
+        <path
+            d="M90 38
+               L140 52
+               V92
+               C140 130 120 156 90 172
+               C60 156 40 130 40 90
+               V52
+               Z"
+            fill="url(#shieldGradient)"
+            stroke="#f43f5e"
+            stroke-width="3"/>
+
+        <!-- Shield highlight -->
+        <path
+            d="M90 50
+               L125 60
+               V92
+               C125 119 112 139 90 151
+               Z"
+            fill="#212529"
+            opacity="0.85"/>
+    </g>
+
+    <!-- CAIO -->
+    <text x="270"
+          y="125"
+          font-family="Montserrat, Arial, sans-serif"
+          font-size="90"
+          font-weight="800"
+          fill="#212529"
+          letter-spacing="4">
+        CAIO
+    </text>
+
+    <!-- Subtitle -->
+    <text x="272"
+          y="190"
+          font-family="Montserrat, Arial, sans-serif"
+          font-size="42"
+          font-weight="300"
+          fill="#5f6672"
+          letter-spacing="5">
+        AI ORCHESTRATOR
+    </text>
+
+</svg>
